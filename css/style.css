@@ -86,4 +86,27 @@ align-items: center;
 }
 
 
+/* NAVIGATION */
+nav {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-list li {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    list-style-type: none;
+}
+
+.nav-list li:last-child {
+    color: #fe5ca6;
+}
+
+
 
