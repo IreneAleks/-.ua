@@ -1,0 +1,89 @@
+body {
+    font-family: 'Mulish', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* HEADER */
+.header-add {
+    background-color: #fc89bd;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.header-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-logo,
+.header-search,
+.header-user,
+.header-shopbag {
+    display: flex;
+    padding: 10px 5px;
+}
+
+header div img {
+    padding-right: 10px;
+}
+
+header a {
+    color: black;
+}
+
+header a:hover {
+    color: #bd9a73;
+}
+
+.header-number {
+    padding: 5px 0;
+}
+
+.header-number-a {
+    color: #bd9a73;
+}
+
+.header-number-a:hover {
+    color: #d0baa2;
+}
+
+.header-logo {
+align-items: center;
+}
+
+.logo-text1 {
+    display: inline;
+    font-family: 'Amatic SC', cursive;
+    letter-spacing: 1px;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase; 
+}
+
+.logo-text2 {
+    color: #666;
+}
+
+.header-shopbag {
+    align-items: center;
+}
+
+.shopbag-number {
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 2.5em;
+}
+
+
+
