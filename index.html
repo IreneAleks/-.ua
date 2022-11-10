@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Flowers-shop/css/normalize.css" type="text/css">
-    <link rel="stylesheet" href="Flowers-shop/css/style.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Mulish&display=swap" rel="stylesheet">
@@ -20,17 +20,20 @@
 
         <div class="header-block">
             <div>
-                <div class="header-number">+38 (012) 3456789</div>
-                <a class="header-number-a" href="#">Зворотній дзвінок</a>
+                <div class="phone">
+                    <img src="assets/images/icons/phone.png" alt="phone-icon" height="20px">
+                    <div class="header-phone">+38 (012) 3456789</div>
+                </div>
+                <a class="header-phone-text" href="#">Зворотній дзвінок</a>
             </div>
             
             <div class="header-search">
-                <img src="/images/search-icon.png" alt="search-icon" height="20px">
-                <a href="#">Пошук</a>
+                <img src="assets/images/icons/search.png" alt="search-icon" height="20px">
+                <a class="header-a" href="#">Пошук</a>
             </div>
 
             <div class="header-logo">
-                <img src="/images/flower-icon.png" alt="logo" width="70px">
+                <img src="assets/images/logo.png" alt="logo" width="70px">
                 <div>
                     <p class="logo-text1">Квіти.ua</p>
                     <div class="logo-text2">Замов гарний настрій</div>
@@ -38,39 +41,117 @@
             </div>
             
             <div class="header-user">
-                <img src="/images/user-icon.png" alt="user-icon" height="20px">
-                <a href="#">Особистий кабінет</a>
+                <img src="assets/images/icons/user.png" alt="user-icon" height="20px">
+                <a class="header-a" href="#">Особистий кабінет</a>
             </div>
             
             <div class="header-shopbag">
-                <img src="/images/shopbag-icon.png" alt="shopbag-icon" height="20px">
+                <img src="assets/images/icons/user.png" alt="shopbag-icon" height="20px">
                 <div class="shopbag-number">0</div>
             </div> 
         </div>
-        
+
         <!-- NAVIGATION -->
         <nav>
             <ul class="nav-list">
-                <li>Букети</li>
-                <li>Троянди</li>
-                <li>Тюльпани</li>
-                <li>Ромашки</li>
-                <li>Квіти в коробці</li>
-                <li>Подарунки</li>
-                <li>Акції</li>
+                <li><a href="#">Букети</a></li>
+                <li><a href="#">Троянди</a></li>
+                <li><a href="#">Тюльпани</a></li>
+                <li><a href="#">Ромашки</a></li>
+                <li><a href="#">Квіти в коробці</a></li>
+                <li><a href="#">Подарунки</a></li>
+                <li><a class="nav-last-item" href="#">Акції</a></li>
             </ul>
         </nav>
         <!-- /NAVIGATION -->
 
-
-
     </header>
     <!-- /HEADER -->
 
+    <!-- MAIN -->
     <main>
+        <img src="assets/images/mainphoto.jpg" alt="girl with flowers" width="100%">
+        
+        <div class="about">
+            <div class="about-item">
+                <img src="assets/images/shop/shop1.jpg" alt="flower shop" width="350px">
+                <p class="about-title">Будинок ваших квітів</p>
+                <div>Запрошуємо до одного з найбільших та сучасних квіткових бутиків столиці. У вашому розпорядженні десятки тисяч рослин з усіх куточків світу. Запрошуємо вас просто для знайомства з квітами або стильних фотосесій.</div>
+            </div>
+
+            <div class="about-item">
+                <img src="assets/images/shop/shop2.jpg" alt="flower shop" width="350px">
+                <p class="about-title">Любов швидше за трафік</p>
+                <div>Ми обожнюємо квіти, але ще більше людей. Втілити саме ваші почуття в унікальній композиції – ось наше завдання. До того ж ми цінуємо ваш час і увагу, а значить, зробимо точно так, як потрібно і трохи краще.</div>
+            </div>
+        </div>
+
+        <div class="special-offer">
+            <p>Акційні пропозиції</p>
+
+            <div class="special-offer-items">
+                <div class="offer-item">
+                    <a href="#"> <img src="assets/images/spec_offer/pink_assortie.jpg" alt="bouquet of flowers"> </a>
+                    <div class="offer-item-text">
+                        <a href="#">Букет рожевий з піонами</a> 
+                    </div>
+                    <div class="offer-item-price">
+                        <span>1 200</span> 1 020 грн
+                    </div>
+                    <button>Купити</button>
+                </div>
+
+                <div class="offer-item">
+                    <a href="#"> <img src="assets/images/spec_offer/blue.jpg" alt="bouquet of flowers"> </a>
+                    <div class="offer-item-text">
+                        <a href="#">Букет з лілій та голубих квітів</a> 
+                    </div>
+                    <div class="offer-item-price">
+                        <span>1 600</span> 1 280 грн
+                    </div>
+                    <button>Купити</button>
+                </div>
+
+                <div class="offer-item">
+                    <a href="#"> <img src="assets/images/spec_offer/violet.jpg" alt="bouquet of flowers"> </a>
+                    <div class="offer-item-text">
+                        <a href="#">Букет гортензій</a> 
+                    </div>
+                    <div class="offer-item-price">
+                        <span>1 625</span> 1 300 грн
+                    </div>
+                    <button>Купити</button>
+                </div>
+
+                <div class="offer-item">
+                    <a href="#"> <img src="assets/images/spec_offer/pink_red.jpg" alt="bouquet of flowers"> </a>
+                    <div class="offer-item-text">
+                        <a href="#">Букет з рожевими трояндами</a> 
+                    </div>
+                    <div class="offer-item-price">
+                        <span>1 500</span> 1 200 грн
+                    </div>
+                    <button>Купити</button>
+                </div>
+
+                <div class="offer-item">
+                    <a href="#"> <img src="assets/images/spec_offer/yellow.jpg" alt="bouquet of flowers"> </a>
+                    <div class="offer-item-text">
+                        <a href="#">Букет жовтих ромашок</a> 
+                    </div>
+                    <div class="offer-item-price">
+                        <span>1 350</span> 1 080 грн
+                    </div>
+                    <button>Купити</button>
+                </div>
+            </div>
+        </div>
+
+
+
 
     </main>
-
+    <!-- /MAIN -->
 
     <footer>
 
