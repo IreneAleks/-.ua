@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="assets/css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Mulish&display=swap" rel="stylesheet">
@@ -22,7 +25,7 @@
             <div>
                 <div class="phone">
                     <img src="assets/images/icons/phone.png" alt="phone-icon" height="20px">
-                    <div class="header-phone">+38 (012) 3456789</div>
+                    <a class="header-phone" href="tel: +38(012)3456789">+38(012)3456789</a>
                 </div>
                 <a class="header-phone-text" href="#">Зворотній дзвінок</a>
             </div>
@@ -70,7 +73,7 @@
 
     <!-- MAIN -->
     <main>
-        <img src="assets/images/mainphoto.jpg" alt="girl with flowers" width="100%">
+        <img class="big-main-img" src="assets/images/mainphoto.jpg" alt="girl with flowers" width="100%">
         
         <div class="about">
             <div class="about-item">
@@ -89,72 +92,311 @@
         <div class="special-offer">
             <p>Акційні пропозиції</p>
 
-            <div class="special-offer-items">
-                <div class="offer-item">
-                    <a href="#"> <img src="assets/images/spec_offer/pink_assortie.jpg" alt="bouquet of flowers"> </a>
-                    <div class="offer-item-text">
-                        <a href="#">Букет рожевий з піонами</a> 
+            <div class="swiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="offer-item">
+                            <span class="offer-item-percent">-15%</span>
+
+                            <a href="#"> <img src="assets/images/spec_offer/pink_assortie.jpg" alt="bouquet of flowers"> </a>
+                            <div class="offer-item-text">
+                                <a href="#">Букет рожевий з піонами</a> 
+                            </div>
+                            <div class="offer-item-price">
+                                <span>1 200</span> 1 020 грн
+                            </div>
+                            <button>Купити</button>
+                        </div>
                     </div>
-                    <div class="offer-item-price">
-                        <span>1 200</span> 1 020 грн
+
+                    <div class="swiper-slide">
+                        <div class="offer-item">
+                            <span class="offer-item-percent">-20%</span>
+
+                            <a href="#"> <img src="assets/images/spec_offer/blue.jpg" alt="bouquet of flowers"> </a>
+                            <div class="offer-item-text">
+                                <a href="#">Букет з лілій та голубих квітів</a> 
+                            </div>
+                            <div class="offer-item-price">
+                                <span>1 600</span> 1 280 грн
+                            </div>
+                            <button>Купити</button>
+                        </div>
                     </div>
-                    <button>Купити</button>
+                    
+                    <div class="swiper-slide">
+                        <div class="offer-item">
+                            <span class="offer-item-percent">-20%</span>
+
+                            <a href="#"> <img src="assets/images/spec_offer/violet.jpg" alt="bouquet of flowers"> </a>
+                            <div class="offer-item-text">
+                                <a href="#">Букет гортензій</a> 
+                            </div>
+                            <div class="offer-item-price">
+                                <span>1 625</span> 1 300 грн
+                            </div>
+                            <button>Купити</button>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="offer-item">
+                            <span class="offer-item-percent">-10%</span>
+
+                            <a href="#"> <img src="assets/images/spec_offer/pink_red.jpg" alt="bouquet of flowers"> </a>
+                            <div class="offer-item-text">
+                                <a href="#">Букет з рожевими трояндами</a> 
+                            </div>
+                            <div class="offer-item-price">
+                                <span>1 750</span> 1 575 грн
+                            </div>
+                            <button>Купити</button>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="offer-item">
+                            <span class="offer-item-percent">-20%</span>
+
+                            <a href="#"> <img src="assets/images/spec_offer/yellow.jpg" alt="bouquet of flowers"> </a>
+                            <div class="offer-item-text">
+                                <a href="#">Букет жовтих ромашок</a> 
+                            </div>
+                            <div class="offer-item-price">
+                                <span>1 350</span> 1 080 грн
+                            </div>
+                            <button>Купити</button>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="offer-item">
-                    <a href="#"> <img src="assets/images/spec_offer/blue.jpg" alt="bouquet of flowers"> </a>
-                    <div class="offer-item-text">
-                        <a href="#">Букет з лілій та голубих квітів</a> 
-                    </div>
-                    <div class="offer-item-price">
-                        <span>1 600</span> 1 280 грн
-                    </div>
-                    <button>Купити</button>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                
                 </div>
+        </div> <!-- /Special offer -->
+        
+        <div class="form-selection">
+            <div class="dark-container">
+                <h2>Красивий букет - найкращий подарунок!</h2>
+                <p>Швидко підберемо Вам ідеальний варіант:</p>
 
-                <div class="offer-item">
-                    <a href="#"> <img src="assets/images/spec_offer/violet.jpg" alt="bouquet of flowers"> </a>
-                    <div class="offer-item-text">
-                        <a href="#">Букет гортензій</a> 
-                    </div>
-                    <div class="offer-item-price">
-                        <span>1 625</span> 1 300 грн
-                    </div>
-                    <button>Купити</button>
-                </div>
+                <form action=" ">
+                    <select name="occation"> 
+                        <option value="1">День народження</option>
+                        <option value="2">8 березня</option>
+                        <option value="3">День Святого Валентина</option>
+                        <option value="4">Випускний</option>
+                        <option value="5">1 вересня</option>
+                        <option value="6">Вчителю</option>
+                        <option value="7">Дочці</option>
+                        <option value="8">Коханій</option>
+                        <option value="9">Сестрі</option>
+                        <option value="10">Керівнику</option>
+                        <option value="11">Колезі</option>
+                    </select>
 
-                <div class="offer-item">
-                    <a href="#"> <img src="assets/images/spec_offer/pink_red.jpg" alt="bouquet of flowers"> </a>
-                    <div class="offer-item-text">
-                        <a href="#">Букет з рожевими трояндами</a> 
-                    </div>
-                    <div class="offer-item-price">
-                        <span>1 500</span> 1 200 грн
-                    </div>
-                    <button>Купити</button>
-                </div>
 
-                <div class="offer-item">
-                    <a href="#"> <img src="assets/images/spec_offer/yellow.jpg" alt="bouquet of flowers"> </a>
-                    <div class="offer-item-text">
-                        <a href="#">Букет жовтих ромашок</a> 
-                    </div>
-                    <div class="offer-item-price">
-                        <span>1 350</span> 1 080 грн
-                    </div>
-                    <button>Купити</button>
-                </div>
+                    <select name="flower"> 
+                        <option value="1">Троянда</option>
+                        <option value="2">Гортензія</option>
+                        <option value="3">Гвоздика</option>
+                        <option value="4">Гербера</option>
+                        <option value="5">Хризантема</option>
+                        <option value="6">Соняшник</option>
+                        <option value="7">Ромашка</option>
+                        <option value="8">Піон</option>
+                        <option value="9">Лілія</option>
+                        <option value="10">Ірис</option>
+                    </select>
+
+                    <select name="budget"> 
+                        <option value="1">100 - 500 грн</option>
+                        <option value="2">500 - 1000 грн</option>
+                        <option value="3">1000 - 1500 грн</option>
+                        <option value="4">від 1500 грн</option>
+                    </select>
+
+                    <button>Підібрати</button>
+                </form>
+                
             </div>
         </div>
 
+        <div class="instagram-container">
+            <div class="inst-text">Ми в Instagram</div>
+            <a class="inst-link" href="#">@prettykvit_ua</a>
+        
+            <div class="gallery-instagram">
+                <div class="inst-item">
+                    <div class="inst-item-inner">
+                        <img class="inst-item-img" src="assets/images/instagram/inst1.jpg" alt="inst1.jpg">
+                        <div class="inst-item-title">
+                            <img src="assets/images/icons/like.png" alt="like" height="30px">
+                            <span>33</span>
+                            <img src="assets/images/icons/chat-balloon.png" alt="chat-balloon" height="30px">
+                            <span>5</span>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="inst-item">
+                    <div class="inst-item-inner">
+                        <img class="inst-item-img" src="assets/images/instagram/inst2.jpg" alt="inst2.jpg">
+                        <div class="inst-item-title">
+                            <img src="assets/images/icons/like.png" alt="like" height="30px">
+                            <span>128</span>
+                            <img src="assets/images/icons/chat-balloon.png" alt="chat-balloon" height="30px">
+                            <span>13</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inst-item">
+                    <div class="inst-item-inner">
+                        <img class="inst-item-img" src="assets/images/instagram/inst3.jpg" alt="inst3.jpg">
+                        <div class="inst-item-title">
+                            <img src="assets/images/icons/like.png" alt="like" height="30px">
+                            <span>135</span>
+                            <img src="assets/images/icons/chat-balloon.png" alt="chat-balloon" height="30px">
+                            <span>8</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inst-item">
+                    <div class="inst-item-inner">
+                        <img class="inst-item-img" src="assets/images/instagram/inst4.jpg" alt="inst4.jpg">
+                        <div class="inst-item-title">
+                            <img src="assets/images/icons/like.png" alt="like" height="30px">
+                            <span>116</span>
+                            <img src="assets/images/icons/chat-balloon.png" alt="chat-balloon" height="30px">
+                            <span>9</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inst-item">
+                    <div class="inst-item-inner">
+                        <img class="inst-item-img" src="assets/images/instagram/inst5.jpg" alt="inst5.jpg">
+                        <div class="inst-item-title">
+                            <img src="assets/images/icons/like.png" alt="like" height="30px">
+                            <span>152</span>
+                            <img src="assets/images/icons/chat-balloon.png" alt="chat-balloon" height="30px">
+                            <span>18</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inst-item">
+                    <div class="inst-item-inner">
+                        <img class="inst-item-img" src="assets/images/instagram/inst6.jpg" alt="inst6.jpg">
+                        <div class="inst-item-title">
+                            <img src="assets/images/icons/like.png" alt="like" height="30px">
+                            <span>97</span>
+                            <img src="assets/images/icons/chat-balloon.png" alt="chat-balloon" height="30px">
+                            <span>6</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inst-item">
+                    <div class="inst-item-inner">
+                        <img class="inst-item-img" src="assets/images/instagram/inst7.jpg" alt="inst7.jpg">
+                        <div class="inst-item-title">
+                            <img src="assets/images/icons/like.png" alt="like" height="30px">
+                            <span>126</span>
+                            <img src="assets/images/icons/chat-balloon.png" alt="chat-balloon" height="30px">
+                            <span>11</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inst-item">
+                    <div class="inst-item-inner">
+                        <img class="inst-item-img" src="assets/images/instagram/inst8.jpg" alt="inst8.jpg">
+                        <div class="inst-item-title">
+                            <img src="assets/images/icons/like.png" alt="like" height="30px">
+                            <span>317</span>
+                            <img src="assets/images/icons/chat-balloon.png" alt="chat-balloon" height="30px">
+                            <span>21</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button>
+                <a href="#">Перейти в Instagram</a>
+            </button>
+        </div>
+
+        <div class="quote">
+            "Квіти, як люди, на добро щедрі і, людям ніжність віддаючи, вони цвітуть, серця обігріваючи, як маленькі, теплі багаття." 
+            <div class="quote-author">К. Жане</div>
+        </div>
+        
 
 
     </main>
     <!-- /MAIN -->
 
     <footer>
+        <div class="footer-about">
+            <div class="footer-title">Квіти.юа</div> 
+            <p>Ми обожнюємо квіти і відчуваємо їхню особливу роль у житті великого міста. Втілюємо у сучасних букетах почуття сучасних людей.</p>
+            <div>© 2022</div>
+        </div>        
+
+        <div class="footer-clients">
+            <div class="footer-title">Клієнтам</div>
+            <ul>
+                <li><a href="#">Доставка та оплата</a></li>
+                <li><a href="#">Контакти</a></li>
+                <li><a href="#">Заміна та повернення</a></li>
+                <li><a href="#">Акції</a></li>
+                <li><a href="#">Публічна оферта</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-company">
+            <div class="footer-title">Компанія</div>
+            <a href="">Про нас</a>
+        </div>
+
+        <div class="footer-news">
+            <div class="footer-title">Будьте в курсі останніх новин</div>
+
+            <div class="footer-email">
+                <input type="email" placeholder="Введіть E-mail адресу">
+                <button class="footer-news-subscribebtn">⮚</button>
+            </div>
+
+            <div class="footer-news-fb-inst">
+                <button>
+                    <img src="assets/images/icons/facebook.png" alt="facebook.png">
+                </button>
+                <button>
+                    <img src="assets/images/icons/instagram.png" alt="instagram.png">
+                </button>
+            </div>
+        </div>
 
     </footer>
+
+    <!-- Arrow up -->
+
+    <a class="arrow-up" href="#">
+        <img src="assets/images/icons/arrow.png" alt="arrowup.png" width="65px">
+    </a>
+
+
+
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="assets/js/app.js"></script>
 </body>
 </html>
