@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Mulish', sans-serif;
 }
@@ -23,7 +27,7 @@ header {
 }
 
 .header-add {
-    background-color: #ff86af;
+    background-color: #9f82f3;
     color: white;
     font-weight: bold;
     font-size: 14px;
@@ -70,7 +74,7 @@ header div img {
 }
 
 .header-logo {
-align-items: center;
+    align-items: center;
 }
 
 .logo-text1 {
@@ -129,8 +133,7 @@ nav {
 
 
 /* MAIN */
-
-main img {
+.big-main-img {
     margin-top: 170px;
 }
 
@@ -154,10 +157,38 @@ main img {
     padding: 18px;
 }
 
+/* Special offer */
+.swiper {
+    max-width: 100%;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    padding: 0 40px;
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: 10px;
+    right: auto;
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: 10px;
+    left: auto;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    opacity: 0.6;
+    color: #ff86af;
+    transition: opacity 0.2s linear;
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover {
+    opacity: 1;
+}
+
 .special-offer {
     background-color: #efe9e3;
-    padding: 40px;
-    margin: 50px 0;
+    padding: 40px 40px 60px;
 }
 
 .special-offer p {
@@ -167,16 +198,12 @@ main img {
     text-align: center;
 }
 
-.special-offer-items {
-    display: flex;
-    justify-content: space-around;
-}
-
 .offer-item {
     position: relative;
     display: inline-block;
     text-align: center;
-    width: 25%;
+    max-width: 200px;
+    height: 300px;
     padding: 25px 25px 80px;
 }
 
@@ -226,9 +253,280 @@ main img {
     transition: background-color 0.2s linear;
 }
 
+.offer-item-percent {
+    position: relative;
+    top: 15px;
+    left: -85px;
+    background-color: #fff;
+    color: #292933;
+    border: 1px #ff86af solid;
+    border-radius: 30px;
+    padding: 20px 10px;
+}
+
+/* Dark container with forms */
+.form-selection {
+    background-color: #292933;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    padding: 60px 0 80px;
+}
+
+.dark-container select {
+    background-color: #fff;
+    color: #292933;
+    font-size: 18px;
+    width: 20%;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    padding: 20px 40px 20px 30px;
+    margin: 10px;
+}
+
+.dark-container button {
+    background-color: #bd9a73;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    border-radius: 30px;
+    padding: 20px 50px;
+}
+
+.dark-container button:hover {
+    background-color: #baa692;
+    transition: background-color 0.2s linear;
+}
+
+/* Instagram */
+.instagram-container {
+    border: 1px solid #8878b6;
+    text-align: center;
+    padding: 40px;
+    margin: 60px;
+}
+
+.inst-text {
+    font-size: 28px;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.inst-link {
+    color: #8878b6;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.inst-link:hover {
+    color: #d6c4b0;
+    transition: color 0.2s linear;
+}
+
+.gallery-instagram {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    padding: 50px 0;
+    margin: 0 auto;
+}
+
+.inst-item {
+    width: 20%;
+    padding: 0 7px;
+    margin: 7px 0;
+}
+
+.inst-item-inner:before {
+    z-index: 2;
+    content: '';
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.inst-item-inner:hover:before {
+    opacity: 1;
+}
+
+.inst-item-inner {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.inst-item-inner:hover .inst-item-img {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+.inst-item-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.inst-item-title {
+    z-index: 3;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color: #fff;
+    opacity: 0;
+}
+
+.inst-item-title:hover {
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
+
+.inst-item-title img {
+    padding: 0 5px 0 15px;
+}
+
+.instagram-container button {
+    background-color: #8878b6;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    border-radius: 30px;
+    padding: 20px 50px;    
+}
+
+.instagram-container button:hover {
+    background-color: #ac9ddb;
+    transition: background-color 0.2s linear;
+}
+
+.instagram-container button a {
+    color: #fff;
+}
 
 
+/* Quote */
+.quote {
+    color: #292933;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Amatic SC', cursive;
+    margin: auto;
+    padding: 40px 200px;
+}
 
+.quote-author {
+    text-align: end;
+}
+
+
+/* FOOTER */
+footer {
+    background-color: #292933;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    padding: 40px 60px;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    color: #bd9a73;
+    transition: color 0.2s linear;
+}
+
+.footer-title {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 0;
+}
+
+.footer-about, .footer-clients, .footer-company, .footer-news {
+    width: 30%;
+    padding: 0 20px;
+}
+
+.footer-clients ul, .footer-clients ul li {
+    list-style: none;
+    padding: 0 0 10px 0;
+    margin: 0;
+}
+
+.footer-news input {
+    padding: 15px;
+    border-radius: 40px;
+    border: none;
+}
+
+.footer-email {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.footer-news-subscribebtn {
+    background-color: #bd9a73;
+    color: #fff;
+    font-size: 35px;
+    border: none;
+    border-radius: 40px;
+    padding: 3px 8px;
+    margin-left: 5px;
+}
+
+.footer-news-subscribebtn:hover {
+    background-color: #baa692;
+    transition: background-color 0.2s linear;
+}
+
+.footer-news-fb-inst img {
+    height: 40px;
+    
+}
+
+.footer-news-fb-inst button {
+    background-color: transparent;
+    border: none;
+    border-radius: 100px;
+    text-align: center;
+    padding: 3px;
+    margin: 20px 5px;
+}
+
+.footer-news-fb-inst button:hover {
+    opacity: 0.7;
+    transition: opacity 0.2s linear;
+}
+
+/* Arrow up */
+.arrow-up {
+    z-index: 10;
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+    opacity: 0.7;
+}
+
+.arrow-up:hover {
+    opacity: 1;
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+}
 
 
 
