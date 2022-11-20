@@ -525,6 +525,7 @@ footer a:hover {
 
 .arrow-up:hover {
     opacity: 1;
+    cursor: pointer;
     transform: scale(1.05);
 }
 
